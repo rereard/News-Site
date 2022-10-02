@@ -29,7 +29,7 @@ const Navbar = () => {
                         setIsNavExpanded(false)
                         event.preventDefault()
                     }} className="flex flex-row w-full">
-                        <input value={searchValue} className=" w-full text-black pl-2 border-b-2 focus:outline-none mr-2" type="text" placeholder="Search..." onChange={(event) => setSearchValue(event.target.value)}/>
+                        <input value={searchValue} className=" w-full text-black pl-2 border-b-2 focus:outline-none mr-2 rounded-lg" type="text" placeholder="Search..." onChange={(event) => setSearchValue(event.target.value)}/>
                         <input disabled={searchValue === ''} type="submit" value="Search" className="text-sm border-2 p-2 cursor-pointer hover:bg-slate-700 hover:border-slate-400 hover:ease-in-out transition duration-150 disabled:cursor-default disabled:border-slate-400 disabled:text-slate-400 disabled:hover:bg-black font-bold rounded-lg" />
                     </form>
                 </div>
