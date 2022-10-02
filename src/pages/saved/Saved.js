@@ -9,7 +9,7 @@ const Saved = () => {
             {news.length === 0 && (
                 <div className="text-center mt-12 text-xl font-medium">No Saved News</div>
             )}
-            <div className="mt-4 md:grid md:grid-cols-4 md:gap-4">
+            <div className="mt-4 md:grid md:grid-cols-4 md:gap-4 mb-10">
                 {news.map((i, index) => (
                     <NewsBox key={index} sourceName={i.sourceName} title={i.title} author={i.author} description={i.description} url={i.url}/>
                 ))  }
