@@ -10,7 +10,7 @@ const Navbar = () => {
                 <h1 className="text-2xl font-bold">News Site</h1>
                 <button className="md:hidden" onClick={() => setIsNavExpanded(!isNavExpanded)}>
                     {!isNavExpanded ? (
-                        <i className="fa-solid fa-chevron-down hover:text-gray-300 hover:ease-in-out"></i>
+                        <i className="fa-solid fa-chevron-down hover:text-gray-300 hover:ease-in-out transition duration-170"></i>
                     ) : (
                         <i className="fa-solid fa-chevron-down rotate-180 transition duration-170 hover:text-gray-300 hover:ease-in-out"></i>
                     )}
