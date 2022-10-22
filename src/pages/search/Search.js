@@ -18,7 +18,7 @@ const Search = () => {
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(resetNews())
-        dispatch(fetchNews(`https://newsapi.org/v2/everything?q="${params.searchValue}"-19&sortBy=publishedAt&language=en&pageSize=20&page=${page}&apiKey=${key}`))
+        dispatch(fetchNews(`https://newsapi.org/v2/everything?q="${params.searchValue}"&sortBy=publishedAt&language=en&pageSize=20&page=${page}&apiKey=${key}`))
     }, [params.searchValue]);
     return(
         <div className="w-11/12 flex justify-center mt-20 flex-col">

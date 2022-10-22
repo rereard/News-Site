@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate, redirect } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 const Navbar = () => {
     const [isNavExpanded, setIsNavExpanded] = useState(false)
     const [searchValue, setSearchValue] = useState('')
